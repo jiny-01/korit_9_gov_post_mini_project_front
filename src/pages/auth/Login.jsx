@@ -22,15 +22,19 @@ function Login() {
           <h1>Social Board</h1>
           <p>친구들과 함께 사진 또는 글을 공유해보세요.</p>
           <div>
-            <button css={s.google} onClick={handleOAuth2LoginOnClick}>
+            <button
+              id="google"
+              css={s.google}
+              onClick={handleOAuth2LoginOnClick}
+            >
               <FcGoogle />
               구글 로그인
             </button>
-            <button css={s.naver} onClick={handleOAuth2LoginOnClick}>
+            <button id="naver" css={s.naver} onClick={handleOAuth2LoginOnClick}>
               <SiNaver />
               네이버 로그인
             </button>
-            <button css={s.kakao} onClick={handleOAuth2LoginOnClick}>
+            <button id="kakao" css={s.kakao} onClick={handleOAuth2LoginOnClick}>
               <RiKakaoTalkFill />
               카카오 로그인
             </button>
